@@ -1,0 +1,163 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  li {
+    list-style: none;
+    padding: 5px 10px;
+    position: relative;
+  }
+  .itens-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  ul.itens-list li:nth-child(odd) {
+    background: #f9f9f9;
+    color: #333; /* Set the text color for odd li elements in light mode */
+  }
+  
+  .dark ul.itens-list li:nth-child(odd) {
+    background: #222; /* Set the background color for odd li elements in dark mode */
+    color: #fff; /* Set the text color for odd li elements in dark mode */
+  }
+  
+  .itens-list li.checked {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  #inputTask {
+    width: 50%;
+  }
+  
+  #div-list {
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 2px 5px;
+  }
+  
+  .close:hover {
+    background-color: #FF0000
+    ;
+    color: white;
+  }
+  
+  .btnAdd {
+    background-color: #FF0000
+    ;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+ #randomic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+  .display-hobby {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #btnRefresh {
+    height: 30px;
+    margin-right: 10px; /* Add margin-right to create spacing */
+    margin-bottom: 10px;
+  }
+  
+  #container-mode {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Add margin-top to create spacing */
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  #darkBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    max-width: fit-content;
+  }
+  #lightBtn {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    max-width: fit-content;
+  }
+  
+  
+  .dark #darkBtn {
+    display: none;
+  }
+  
+  .dark #lightBtn {
+    display: inline-block;
+  }
+  
+  .light #darkBtn {
+    display: inline-block;
+  }
+  
+  .light #lightBtn {
+    display: none;
+  }
+  
+  /* Dark Mode styles */
+  .dark {
+    background-color: #222;
+    color: #fff;
+  }
+
+#div-header {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .dark #div-header,
+  .dark #div-list,
+  .dark #randomic{
+    background-color: #333;
+  }
+
+  .dark .btnAdd {
+    background-color: #8b008b;
+    color: #fff;
+  }
+  

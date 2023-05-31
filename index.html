@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do list</title>
+</head>
+<body>
+    <div id="container">
+        <div id="div-header">
+            <h2 id="title">To-do list</h2>
+            <input type="text" id="inputTask" placeholder="Type a task here...">
+            <span onclick="newItem()" class="btnAdd">Add</span>
+        </div>
+        <div id="div-list">
+            <ul class="itens-list">
+                <li>Stretching</li>
+                <li>Go jogging</li>
+                <li>Play chess</li>
+                <li>Work</li>
+            </ul>
+        </div>
+     
+    </div>
+    
+ <div id="randomic">
+   <p>Needs an ideia of a hobby? Click bellow and find a randomic suggestion</p>
+    <p class="display-hobby"></p>
+    <button onclick="newHobby()" id="btnRefresh">Refresh</button>
+    <span onclick="addSuggestedHobby()" class="btnAdd" id="addSuggestion">Add</span>
+ </div>
+ <div id="container-mode">
+    <span id="darkBtn" onclick="toggleDarkMode()">Dark Mode</span> <span id="lightBtn"  onclick="toggleDarkMode()" style="display: none;">Light Mode</span>
+ </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
