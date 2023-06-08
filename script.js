@@ -41,7 +41,6 @@ if(inputContent === ''){
     span.appendChild(txt)
     element.appendChild(span)
     lista.appendChild(element) 
-    var list = document.querySelector('.itens-list');
     addCloseEventListener() 
 };
 //Checked item mark
